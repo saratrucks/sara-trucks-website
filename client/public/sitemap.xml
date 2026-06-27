@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://sara-trucks.com/</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sara-trucks.com/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sara-trucks.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sara-trucks.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sara-trucks.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sara-trucks.com/?lang=ro"/>
+  </url>
+  
+  <!-- Trucks Page -->
+  <url>
+    <loc>https://sara-trucks.com/trucks</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sara-trucks.com/trucks?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sara-trucks.com/trucks?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sara-trucks.com/trucks?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sara-trucks.com/trucks?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sara-trucks.com/trucks?lang=ro"/>
+  </url>
+  
+  <!-- Trailers Page -->
+  <url>
+    <loc>https://sara-trucks.com/trailers</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sara-trucks.com/trailers?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sara-trucks.com/trailers?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sara-trucks.com/trailers?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sara-trucks.com/trailers?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sara-trucks.com/trailers?lang=ro"/>
+  </url>
+  
+  <!-- Equipment Page -->
+  <url>
+    <loc>https://sara-trucks.com/equipment</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sara-trucks.com/equipment?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sara-trucks.com/equipment?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sara-trucks.com/equipment?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sara-trucks.com/equipment?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://sara-trucks.com/equipment?lang=ro"/>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://sara-trucks.com/services</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Team Page -->
+  <url>
+    <loc>https://sara-trucks.com/team</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://sara-trucks.com/contact</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- صفحة التقديم للمندوبين -->
+  <url>
+    <loc>https://sara-trucks.com/apply-representative</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,24 @@
+# Sara Trucks International SRL
+# https://sara-trucks.com
+
+User-agent: *
+Allow: /
+
+# Allow all crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://sara-trucks.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin
+Disallow: /api/
+Disallow: /login
+Disallow: /register
