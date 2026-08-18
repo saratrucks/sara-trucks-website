@@ -25,6 +25,7 @@ const Services = lazy(() => import("./pages/Services"));
 const Team = lazy(() => import("./pages/Team"));
 const Contact = lazy(() => import("./pages/Contact"));
 const ApplyRepresentative = lazy(() => import("./pages/ApplyRepresentative"));
+const Admin = lazy(() => import("./pages/Admin"));
 
 // Loading spinner component
 function PageLoader() {
@@ -67,6 +68,13 @@ function AppContent() {
   return (
     <Switch>
       {/* Public Routes - With Layout */}
+      <Route path="/admin">
+        {() => (
+          <Suspense fallback={<PageLoader />}>
+            <Admin />
+          </Suspense>
+        )}
+      </Route>
       <Route path="/apply-representative">
         {() => <PublicRoute component={ApplyRepresentative} />}
       </Route>
