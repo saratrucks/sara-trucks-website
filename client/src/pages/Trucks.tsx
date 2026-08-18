@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Truck, Calendar, Euro, MapPin, Loader2, X, SlidersHorizontal } from "lucide-react";
+import { Search, Truck, Calendar, Euro, MapPin, Loader2, X, SlidersHorizontal, Pencil } from "lucide-react";
 import { trucks as trucksData } from "@/data/trucks";
 import { Link } from "wouter";
 
@@ -135,6 +135,15 @@ export default function Trucks() {
         <div className="container relative z-10">
           <h1 className="text-4xl font-bold font-cairo mb-4">{t.trucks_page.title}</h1>
           <p className="text-xl text-primary-foreground/80">{t.trucks_page.subtitle}</p>
+          <a
+            href="https://github.com/saratrucks/sara-trucks-website/edit/main/client/src/data/trucks.ts"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-full text-sm font-medium transition-colors"
+          >
+            <Pencil className="h-4 w-4" />
+            Edit Data
+          </a>
         </div>
       </div>
 
