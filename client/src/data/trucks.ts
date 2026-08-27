@@ -25,22 +25,6 @@ export interface TruckImage {
 
 export const trucks: Truck[] = [
   {
-    "id": 7,
-    "brand": "Volvo",
-    "model": "FH16 750",
-    "year": 2017,
-    "status": "sold",
-    "location": "Roma, Italy",
-    "description": "Volvo FH16 750 - il più potente della gamma. Cabina Globetrotter XL, motore D16K Euro 6. Per trasporti pesanti.",
-    "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
-    "mileage": "600,000 km",
-    "engineType": "D16K Euro 6",
-    "transmission": "I-Shift",
-    "transmissionType": "automatic",
-    "horsepower": 750,
-    "featured": false
-  },
-  {
     "id": 8,
     "brand": "Scania",
     "model": "S 530",
@@ -76,13 +60,6 @@ export const trucks: Truck[] = [
 export const truckImages: TruckImage[] = [
   {
     "id": 1,
-    "truckId": 7,
-    "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 2,
     "truckId": 8,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
