@@ -3,11 +3,13 @@ import { Link, useLocation } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Truck, Phone, Users, Info, Home as HomeIcon } from "lucide-react";
+import { Menu, X, Truck, Phone, Users, Info, Home as HomeIcon, ShieldCheck } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useAdminSession } from "@/contexts/AdminSessionContext";
 
 export function Navbar() {
   const { t, dir, language } = useLanguage();
+  const { isAdmin } = useAdminSession();
   const [location, setLocation] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,6 +57,14 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
+          {isAdmin && (
+            <Button asChild size="sm" variant="outline" className="hidden lg:flex border-primary/30 text-primary" data-admin-only="true">
+              <Link href="/admin">
+                <ShieldCheck className="h-4 w-4" />
+                {language === "ar" ? "لوحة الإدارة" : language === "it" ? "Amministrazione" : language === "de" ? "Verwaltung" : language === "ro" ? "Administrare" : "Admin"}
+              </Link>
+            </Button>
+          )}
           <LanguageSwitcher />
           
           <Button 
@@ -75,6 +85,17 @@ export function Navbar() {
             <SheetContent side={dir === 'rtl' ? 'right' : 'left'} className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-8 mt-8">
                 <div className="flex flex-col gap-4">
+                  {isAdmin && (
+                    <Link
+                      href="/admin"
+                      onClick={() => setIsOpen(false)}
+                      className="flex items-center gap-3 rounded-md bg-secondary/10 p-2 text-lg font-bold text-secondary"
+                      data-admin-only="true"
+                    >
+                      <ShieldCheck className="h-5 w-5" />
+                      {language === "ar" ? "لوحة الإدارة" : language === "it" ? "Amministrazione" : language === "de" ? "Verwaltung" : language === "ro" ? "Administrare" : "Admin"}
+                    </Link>
+                  )}
                   {navItems.map((item) => (
                     <Link
                       key={item.href}

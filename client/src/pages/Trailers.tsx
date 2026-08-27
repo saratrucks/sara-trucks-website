@@ -6,9 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Container, Calendar, Euro, MapPin, Loader2, X, SlidersHorizontal, Pencil } from "lucide-react";
+import { Search, Container, Calendar, Euro, MapPin, Loader2, X, SlidersHorizontal } from "lucide-react";
 import { trailers as trailersData } from "@/data/trailers";
 import { Link } from "wouter";
+import { AdminCatalogActions, AdminItemEditButton } from "@/components/AdminEditActions";
 
 export default function Trailers() {
   const { t, dir, language } = useLanguage();
@@ -133,15 +134,7 @@ export default function Trailers() {
           <div className="container relative z-10">
             <h1 className="text-4xl font-bold font-cairo mb-4">{pageTitle[language] || pageTitle.en}</h1>
             <p className="text-xl text-primary-foreground/80">{pageSubtitle[language] || pageSubtitle.en}</p>
-            <a
-              href="https://github.com/saratrucks/sara-trucks-website/edit/main/client/src/data/trailers.ts"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-full text-sm font-medium transition-colors"
-            >
-              <Pencil className="h-4 w-4" />
-              Edit Data
-            </a>
+            <AdminCatalogActions catalog="trailers" />
           </div>
         </div>
 
@@ -364,7 +357,10 @@ export default function Trailers() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredTrailers.map((trailer: any) => (
-                <Card key={trailer.id} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
+                <Card key={trailer.id} className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
+                  <div className="absolute left-4 top-4 z-20">
+                    <AdminItemEditButton catalog="trailers" id={trailer.id} />
+                  </div>
                   <Link href={`/trailers/${trailer.id}`} className="block">
                     <div className="relative h-64 overflow-hidden bg-muted cursor-pointer">
                       {trailer.imageUrl ? (

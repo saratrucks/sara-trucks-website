@@ -36,6 +36,7 @@ import { ImageGallery } from "@/components/ImageGallery";
 import { useTranslation } from "@/lib/translate";
 import { SEO } from "@/components/SEO";
 import { ProductSchema } from "@/components/ProductSchema";
+import { AdminItemEditButton } from "@/components/AdminEditActions";
 
 // WhatsApp Icon Component
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -308,8 +309,10 @@ export default function TruckDetails() {
               </Badge>
             </div>
             
-            {/* Share Button */}
-            <DropdownMenu>
+            <div className="flex flex-wrap items-center gap-2">
+              <AdminItemEditButton catalog="trucks" id={truck.id} />
+              {/* Share Button */}
+              <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="secondary" className="gap-2 bg-white/20 hover:bg-white/30 text-white border-none">
                   <Share2 className="h-4 w-4" />
@@ -338,7 +341,8 @@ export default function TruckDetails() {
                   {getCopyLabel()}
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+              </DropdownMenu>
+            </div>
           </div>
         </div>
       </div>

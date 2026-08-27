@@ -6,6 +6,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { AdminSessionProvider } from "./contexts/AdminSessionContext";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
@@ -171,8 +172,14 @@ function isBot(): boolean {
 // App wrapper with language selection gate
 function AppWithLanguageGate() {
   const [hasSelectedLanguage, setHasSelectedLanguage] = useState<boolean | null>(null);
+  const isAdminPath = window.location.pathname.startsWith("/admin");
 
   useEffect(() => {
+    // Admin login must always be directly reachable.
+    if (isAdminPath) {
+      setHasSelectedLanguage(true);
+      return;
+    }
     // Skip language selection for bots/crawlers
     if (isBot()) {
       setHasSelectedLanguage(true);
@@ -181,7 +188,7 @@ function AppWithLanguageGate() {
     // Check if user has already selected a language
     const languageSelected = localStorage.getItem("language-selected");
     setHasSelectedLanguage(languageSelected === "true");
-  }, []);
+  }, [isAdminPath]);
 
   // Show loading while checking localStorage
   if (hasSelectedLanguage === null) {
@@ -208,10 +215,12 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <LanguageProvider>
-          <TooltipProvider>
-            <Toaster />
-            <AppWithLanguageGate />
-          </TooltipProvider>
+          <AdminSessionProvider>
+            <TooltipProvider>
+              <Toaster />
+              <AppWithLanguageGate />
+            </TooltipProvider>
+          </AdminSessionProvider>
         </LanguageProvider>
       </ThemeProvider>
     </ErrorBoundary>

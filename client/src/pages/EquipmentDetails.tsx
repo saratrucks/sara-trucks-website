@@ -33,6 +33,7 @@ import { ImageGallery } from "@/components/ImageGallery";
 import { useTranslation } from "@/lib/translate";
 import { SEO } from "@/components/SEO";
 import { ProductSchema } from "@/components/ProductSchema";
+import { AdminItemEditButton } from "@/components/AdminEditActions";
 
 // WhatsApp Icon Component
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -219,13 +220,16 @@ export default function EquipmentDetails() {
                 {pageLabels.backToEquipment[language]}
               </Button>
             </Link>
-            <div className="flex flex-wrap items-center gap-4">
-              <h1 className="text-3xl md:text-4xl font-bold font-cairo">
-                {equipment.brand} {equipment.model}
-              </h1>
-              <Badge className={`${getStatusColor(equipment.status)} text-white border-none text-sm px-3 py-1`}>
-                {getStatusLabel(equipment.status)}
-              </Badge>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center gap-4">
+                <h1 className="text-3xl md:text-4xl font-bold font-cairo">
+                  {equipment.brand} {equipment.model}
+                </h1>
+                <Badge className={`${getStatusColor(equipment.status)} text-white border-none text-sm px-3 py-1`}>
+                  {getStatusLabel(equipment.status)}
+                </Badge>
+              </div>
+              <AdminItemEditButton catalog="equipment" id={equipment.id} />
             </div>
           </div>
         </div>
