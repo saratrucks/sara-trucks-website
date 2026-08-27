@@ -38,6 +38,12 @@
 
 تم إنشاء الرمز بنجاح دون تاريخ انتهاء، لأنه مخصص لوظيفة الموقع المستمرة. لا تُحفظ قيمة الرمز في المستودع أو وثائق المشروع؛ ستوضع فقط داخل متغير البيئة السري `GITHUB_TOKEN` على Vercel.
 
+تم تسجيل الدخول إلى حساب Vercel المرتبط بمشروع `sara-trucks-website-vxzb`. صفحة Environment Variables لا تحتوي متغيرات مخصصة حالياً، ولذلك ستضاف `GITHUB_TOKEN` و`ADMIN_PASSWORD` و`ADMIN_SESSION_SECRET` كأسرار خادم جديدة.
+
+بدأ إنشاء رمز Vercel مؤقت باسم `sara-trucks-admin-setup` لاستخدامه مرة واحدة في إضافة الأسرار وإعادة النشر. لن تُحفظ قيمته في المستودع، وسيُلغى بعد اكتمال التحقق الحي.
+
+تم تقييد رمز Vercel بفريق **SaraTrucks** ثم بالمشروع `sara-trucks-website-vxzb` وحده، بدل منحه وصولاً كاملاً إلى الحساب أو بقية المشاريع.
+
 ## المصادر الرسمية
 
 1. Vercel، **Vite on Vercel**: https://vercel.com/docs/frameworks/frontend/vite
