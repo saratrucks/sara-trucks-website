@@ -24,21 +24,6 @@ export interface TrailerImage {
 
 export const trailers: Trailer[] = [
   {
-    "id": 2,
-    "brand": "Schmitz Cargobull",
-    "model": "S.CS",
-    "year": 2019,
-    "status": "available",
-    "location": "Milano, Italy",
-    "description": "Semirimorchio centinato Schmitz Cargobull con tetto scorrevole. Perfetto per carichi versatili.",
-    "imageUrl": "https://images.unsplash.com/photo-1562674319-2a1d7e3c4e47?w=800",
-    "type": "Curtainsider",
-    "price": "28000",
-    "axles": 3,
-    "length": "13.6 m",
-    "capacity": "25000 kg"
-  },
-  {
     "id": 3,
     "brand": "Wielton",
     "model": "NW-3",
@@ -88,27 +73,20 @@ export const trailers: Trailer[] = [
 export const trailerImages: TrailerImage[] = [
   {
     "id": 1,
-    "trailerId": 2,
-    "imageUrl": "https://images.unsplash.com/photo-1562674319-2a1d7e3c4e47?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 2,
     "trailerId": 3,
     "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 3,
+    "id": 2,
     "trailerId": 4,
     "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 4,
+    "id": 3,
     "trailerId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
