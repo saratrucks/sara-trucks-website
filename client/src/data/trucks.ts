@@ -103,6 +103,21 @@ export const trucks: Truck[] = [
     "transmissionType": "automatic",
     "horsepower": 530,
     "featured": true
+  },
+  {
+    "id": 9,
+    "brand": "sss",
+    "model": "sss",
+    "year": 2026,
+    "status": "available",
+    "location": "sss",
+    "description": "ssss",
+    "mileage": "sss",
+    "engineType": "s",
+    "transmission": "sss",
+    "transmissionType": "automatic",
+    "horsepower": 0,
+    "featured": false
   }
 ];
 
