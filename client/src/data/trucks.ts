@@ -73,22 +73,6 @@ export const trucks: Truck[] = [
     "featured": false
   },
   {
-    "id": 6,
-    "brand": "Iveco",
-    "model": "S-Way 490",
-    "year": 2022,
-    "status": "available",
-    "location": "Milano, Italy",
-    "description": "Iveco S-Way 490 AS440. Nuovo design, cabina Hi-Way. Motore Cursor 11 Euro 6D. Connettività avanzata.",
-    "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
-    "mileage": "180,000 km",
-    "engineType": "Cursor 11 Euro 6D",
-    "transmission": "Hi-Tronix",
-    "transmissionType": "automatic",
-    "horsepower": 490,
-    "featured": true
-  },
-  {
     "id": 7,
     "brand": "Volvo",
     "model": "FH16 750",
@@ -146,20 +130,13 @@ export const truckImages: TruckImage[] = [
   },
   {
     "id": 4,
-    "truckId": 6,
-    "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 5,
     "truckId": 7,
     "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 6,
+    "id": 5,
     "truckId": 8,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
