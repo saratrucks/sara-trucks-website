@@ -41,22 +41,6 @@ export const trucks: Truck[] = [
     "featured": true
   },
   {
-    "id": 2,
-    "brand": "Scania",
-    "model": "R 450",
-    "year": 2020,
-    "status": "available",
-    "location": "Milano, Italy",
-    "description": "Scania R 450 trattore stradale con cabina Highline. Motore Euro 6, cambio Opticruise. Manutenzione completa documentata.",
-    "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
-    "mileage": "380,000 km",
-    "engineType": "DC13 Euro 6",
-    "transmission": "Opticruise",
-    "transmissionType": "automatic",
-    "horsepower": 450,
-    "featured": true
-  },
-  {
     "id": 3,
     "brand": "Mercedes-Benz",
     "model": "Actros 1845",
@@ -164,48 +148,41 @@ export const truckImages: TruckImage[] = [
   },
   {
     "id": 2,
-    "truckId": 2,
-    "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 3,
     "truckId": 3,
     "imageUrl": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 4,
+    "id": 3,
     "truckId": 4,
     "imageUrl": "https://images.unsplash.com/photo-1562674319-2a1d7e3c4e47?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 5,
+    "id": 4,
     "truckId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 6,
+    "id": 5,
     "truckId": 6,
     "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 7,
+    "id": 6,
     "truckId": 7,
     "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 8,
+    "id": 7,
     "truckId": 8,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
