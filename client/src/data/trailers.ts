@@ -24,21 +24,6 @@ export interface TrailerImage {
 
 export const trailers: Trailer[] = [
   {
-    "id": 3,
-    "brand": "Wielton",
-    "model": "NW-3",
-    "year": 2021,
-    "status": "available",
-    "location": "Roma, Italy",
-    "description": "Semirimorchio ribaltabile Wielton per trasporto materiali sfusi. Cassone in acciaio Hardox.",
-    "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
-    "type": "Tipper",
-    "price": "42000",
-    "axles": 3,
-    "length": "10.5 m",
-    "capacity": "28000 kg"
-  },
-  {
     "id": 4,
     "brand": "Schwarzmüller",
     "model": "Tank",
@@ -73,20 +58,13 @@ export const trailers: Trailer[] = [
 export const trailerImages: TrailerImage[] = [
   {
     "id": 1,
-    "trailerId": 3,
-    "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 2,
     "trailerId": 4,
     "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 3,
+    "id": 2,
     "trailerId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
