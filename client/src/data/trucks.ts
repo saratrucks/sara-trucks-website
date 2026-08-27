@@ -57,22 +57,6 @@ export const trucks: Truck[] = [
     "featured": true
   },
   {
-    "id": 4,
-    "brand": "DAF",
-    "model": "XF 480",
-    "year": 2018,
-    "status": "available",
-    "location": "Napoli, Italy",
-    "description": "DAF XF 480 Super Space Cab. Motore PACCAR MX-13 Euro 6. Ottimo per lunghe percorrenze. Pneumatica integrale.",
-    "imageUrl": "https://images.unsplash.com/photo-1562674319-2a1d7e3c4e47?w=800",
-    "mileage": "520,000 km",
-    "engineType": "PACCAR MX-13 Euro 6",
-    "transmission": "TraXon",
-    "transmissionType": "automatic",
-    "horsepower": 480,
-    "featured": false
-  },
-  {
     "id": 5,
     "brand": "MAN",
     "model": "TGX 18.500",
@@ -155,34 +139,27 @@ export const truckImages: TruckImage[] = [
   },
   {
     "id": 3,
-    "truckId": 4,
-    "imageUrl": "https://images.unsplash.com/photo-1562674319-2a1d7e3c4e47?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 4,
     "truckId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 5,
+    "id": 4,
     "truckId": 6,
     "imageUrl": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 6,
+    "id": 5,
     "truckId": 7,
     "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 7,
+    "id": 6,
     "truckId": 8,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
