@@ -24,21 +24,6 @@ export interface EquipmentImage {
 
 export const equipment: Equipment[] = [
   {
-    "id": 3,
-    "brand": "JCB",
-    "model": "3CX",
-    "year": 2021,
-    "status": "available",
-    "location": "Roma, Italy",
-    "description": "Terna JCB 3CX con stabilizzatori idraulici. Perfetta per lavori di scavo e carico.",
-    "imageUrl": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=800",
-    "category": "Backhoe Loader",
-    "price": "55000",
-    "operatingHours": "2100 h",
-    "weight": "8000 kg",
-    "enginePower": "74 kW"
-  },
-  {
     "id": 4,
     "brand": "Liebherr",
     "model": "LTM 1030",
@@ -73,20 +58,13 @@ export const equipment: Equipment[] = [
 export const equipmentImages: EquipmentImage[] = [
   {
     "id": 1,
-    "equipmentId": 3,
-    "imageUrl": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 2,
     "equipmentId": 4,
     "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800",
     "isPrimary": true,
     "sortOrder": 0
   },
   {
-    "id": 3,
+    "id": 2,
     "equipmentId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1580901368919-7738efb0f87e?w=800",
     "isPrimary": true,
