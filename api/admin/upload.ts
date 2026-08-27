@@ -1,7 +1,7 @@
-import { requireAdmin } from "../../server/admin/auth";
-import { type Catalog, uploadPath } from "../../server/admin/catalogs";
-import { putRepositoryFile } from "../../server/admin/github";
-import { apiError, assertSameOrigin, json } from "../../server/admin/http";
+import { requireAdmin } from "../../server/admin/auth.js";
+import { type Catalog, uploadPath } from "../../server/admin/catalogs.js";
+import { putRepositoryFile } from "../../server/admin/github.js";
+import { apiError, assertSameOrigin, json } from "../../server/admin/http.js";
 
 const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
 const catalogs = new Set<Catalog>(["trucks", "trailers", "equipment"]);

@@ -1,5 +1,5 @@
-import { clearSessionCookie } from "../../server/admin/auth";
-import { apiError, assertSameOrigin, json } from "../../server/admin/http";
+import { clearSessionCookie } from "../../server/admin/auth.js";
+import { apiError, assertSameOrigin, json } from "../../server/admin/http.js";
 
 export async function POST(request: Request) {
   try {

@@ -1,6 +1,6 @@
-import { requireAdmin } from "../../server/admin/auth";
-import { type Catalog, saveCatalog } from "../../server/admin/catalogs";
-import { apiError, assertSameOrigin, json, readJson } from "../../server/admin/http";
+import { requireAdmin } from "../../server/admin/auth.js";
+import { type Catalog, saveCatalog } from "../../server/admin/catalogs.js";
+import { apiError, assertSameOrigin, json, readJson } from "../../server/admin/http.js";
 
 type SavePayload = {
   catalog?: Catalog;

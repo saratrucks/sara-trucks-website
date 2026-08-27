@@ -1,5 +1,5 @@
-import { isAdminRequest } from "../../server/admin/auth";
-import { apiError, json } from "../../server/admin/http";
+import { isAdminRequest } from "../../server/admin/auth.js";
+import { apiError, json } from "../../server/admin/http.js";
 
 export async function GET(request: Request) {
   try {

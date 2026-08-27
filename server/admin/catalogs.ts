@@ -1,4 +1,4 @@
-import { getRepositoryFile, putRepositoryFile } from "./github";
+import { getRepositoryFile, putRepositoryFile } from "./github.js";
 
 export type Catalog = "trucks" | "trailers" | "equipment";
 
