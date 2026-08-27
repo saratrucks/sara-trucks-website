@@ -24,21 +24,6 @@ export interface TrailerImage {
 
 export const trailers: Trailer[] = [
   {
-    "id": 4,
-    "brand": "Schwarzmüller",
-    "model": "Tank",
-    "year": 2018,
-    "status": "reserved",
-    "location": "Napoli, Italy",
-    "description": "Cisterna Schwarzmüller per trasporto liquidi alimentari. Capacità 32.000 litri.",
-    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
-    "type": "Tanker",
-    "price": "38000",
-    "axles": 3,
-    "length": "12.0 m",
-    "capacity": "32000 L"
-  },
-  {
     "id": 5,
     "brand": "Kögel",
     "model": "Cargo",
@@ -58,13 +43,6 @@ export const trailers: Trailer[] = [
 export const trailerImages: TrailerImage[] = [
   {
     "id": 1,
-    "trailerId": 4,
-    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
-    "isPrimary": true,
-    "sortOrder": 0
-  },
-  {
-    "id": 2,
     "trailerId": 5,
     "imageUrl": "https://images.unsplash.com/photo-1586191582056-3e4fbb27e2c3?w=800",
     "isPrimary": true,
