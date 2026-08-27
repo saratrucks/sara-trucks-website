@@ -82,7 +82,9 @@ function cleanBase(item: Record<string, unknown>) {
 }
 
 export function sanitizeCatalog(catalog: Catalog, rawItems: unknown) {
-  if (!Array.isArray(rawItems) || rawItems.length > 250) throw new Error("INVALID_INPUT");
+  if (!Array.isArray(rawItems) || rawItems.length < 1 || rawItems.length > 250) {
+    throw new Error("INVALID_INPUT");
+  }
 
   const seenIds = new Set<number>();
   const items = rawItems.map((raw) => {

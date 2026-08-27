@@ -24,6 +24,10 @@ describe("catalog validation", () => {
     ])).toThrow("INVALID_INPUT");
   });
 
+  it("rejects an empty catalog to prevent accidental full deletion", () => {
+    expect(() => sanitizeCatalog("trucks", [])).toThrow("INVALID_INPUT");
+  });
+
   it("accepts only supported image formats and safe item ids", () => {
     expect(uploadPath("trucks", 8, "image/webp")).toMatch(/^client\/public\/uploads\/trucks-8-\d+\.webp$/);
     expect(() => uploadPath("trucks", 8, "image/svg+xml")).toThrow("INVALID_INPUT");
