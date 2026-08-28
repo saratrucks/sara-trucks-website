@@ -41,16 +41,15 @@ export const trucks: Truck[] = [
   },
   {
     "id": 10,
-    "brand": "teast",
-    "model": "teast",
-    "year": 2026,
-    "status": "reserved",
-    "location": "sss",
+    "brand": "Mercedes",
+    "model": "Antos",
+    "year": 2014,
+    "status": "available",
+    "location": "Catania , Italia",
     "description": "aadsd",
     "imageUrl": "/uploads/trucks-10-1787907725212.jpg",
-    "mileage": "0444",
-    "engineType": "d13",
-    "transmissionType": "manual",
+    "mileage": "600.000",
+    "transmissionType": "automatic",
     "horsepower": 500,
     "featured": false
   }
