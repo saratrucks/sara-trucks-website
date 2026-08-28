@@ -38,7 +38,30 @@ export const trucks: Truck[] = [
     "transmissionType": "automatic",
     "horsepower": 0,
     "featured": false
+  },
+  {
+    "id": 10,
+    "brand": "teast",
+    "model": "teast",
+    "year": 2026,
+    "status": "reserved",
+    "location": "sss",
+    "description": "aadsd",
+    "imageUrl": "/uploads/trucks-10-1787907725212.jpg",
+    "mileage": "0444",
+    "engineType": "d13",
+    "transmissionType": "manual",
+    "horsepower": 500,
+    "featured": false
   }
 ];
 
-export const truckImages: TruckImage[] = [];
+export const truckImages: TruckImage[] = [
+  {
+    "id": 1,
+    "truckId": 10,
+    "imageUrl": "/uploads/trucks-10-1787907725212.jpg",
+    "isPrimary": true,
+    "sortOrder": 0
+  }
+];
